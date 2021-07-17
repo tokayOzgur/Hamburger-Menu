@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow: hidden;
+
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/bg.jpeg") no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* burada gölgelendirme verilmiştir. */
+}
+
+.content {
+    max-width: 700px;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.content h1 {
+
+    font-size: 4.3rem;
+    margin-bottom: 0.8rem;
+    color: #0d81ce;
+    font-family: "Dancing Script", cursive;
+}
+.content p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 100;
+
+}
+
+.btn{
+    padding: 0.75rem 1.25rem;
+    margin-top: .8rem;
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: #0d81ce;
+    background-color: #111;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: .3s;
+
+}
+.btn:hover{
+    opacity: 0.7;
+}
